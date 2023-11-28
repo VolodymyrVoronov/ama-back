@@ -84,8 +84,8 @@ ALTER TABLE public.users ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
 
 COPY public.questions (id, author_email, question, answer, created_at, updated_at) FROM stdin;
 1	max@example.com	What is the meaning of life?	Lorem, ipsum dolor sit amet consectetur adipisicing elit.	2022-09-23 00:00:00	2022-09-23 00:00:00
-2	dan@example.com	How do I become a programmer?	Fugiat sint iusto cumque modi, maxime corrupti facilis, autem nisi blanditiis voluptatum odio quasi non doloremque pariatur perspiciatis tempore sed delectus eveniet!	2022-09-23 00:00:00	2022-09-23 00:00:00
-3	alex@example.com	How do I become a cool developer?	Lorem, ipsum dolor sit amet consectetur adipisicing elit.	2022-09-23 00:00:00	2022-09-23 00:00:00
+2	dan@example.com	How do I become a programmer?	Fugiat sint iusto cumque modi, maxime corrupti facilis, autem nisi blanditiis voluptatum odio quasi non doloremque pariatur perspiciatis tempore sed delectus eveniet!	2021-09-23 00:00:00	2022-09-23 00:00:00
+3	alex@example.com	How do I become a cool developer?	Lorem, ipsum dolor sit amet consectetur adipisicing elit.	2023-09-23 00:00:00	2022-09-23 00:00:00
 \.
 
 --
