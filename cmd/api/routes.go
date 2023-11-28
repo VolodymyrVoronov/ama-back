@@ -18,5 +18,7 @@ func (app *Application) routes() http.Handler {
 	mux.Get("/refresh", app.RefreshToken)
 	mux.Get("/logout", app.Logout)
 
+	mux.Get("/questions", app.AllQuestions)
+
 	return mux
 }
