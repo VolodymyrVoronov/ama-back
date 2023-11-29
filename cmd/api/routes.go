@@ -19,6 +19,7 @@ func (app *Application) routes() http.Handler {
 	mux.Get("/logout", app.Logout)
 
 	mux.Get("/questions", app.AllQuestions)
+	mux.Post("/questions", app.InsertQuestion)
 
 	return mux
 }

@@ -125,6 +125,7 @@ func (app *Application) InsertQuestion(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	question.Answer = ""
 	question.CreatedAt = time.Now()
 	question.UpdatedAt = time.Now()
 
