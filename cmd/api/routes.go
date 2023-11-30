@@ -21,5 +21,12 @@ func (app *Application) routes() http.Handler {
 	mux.Get("/questions", app.AllQuestions)
 	mux.Post("/questions", app.InsertQuestion)
 
+	mux.Route("/admin", func(mux chi.Router) {
+		mux.Use(app.authRequired)
+
+		mux.Patch("/questions/{id}", app.UpdatedQuestion)
+		mux.Delete("/questions/{id}", app.DeleteQuestion)
+	})
+
 	return mux
 }
